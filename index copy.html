@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Am Free Ghana Retreat</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #F1EDE9; /* Light beige background */
+            color: #333333; /* Dark gray text */
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #FFFFFF; /* White background for the container */
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Text Column (Section 1) */
+        .text-column {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            animation: slideInLeft 1.5s ease-in-out;
+        }
+
+        .text-column h1 {
+            font-size: 2.8rem;
+            color: #fc0c0d;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-column p {
+            font-size: 1.3rem;
+            color: #555555; /* Medium gray text */
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            padding: 0.8rem 2.2rem;
+            background-color: #fc0c0d;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(252, 12, 13, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #FF3B3B;
+            transform: scale(1.05);
+        }
+
+        /* Video Column (Section 1) */
+        .video-column {
+            flex: 1.5;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: slideInRight 1.5s ease-in-out;
+        }
+
+        .video-column iframe {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 450px; /* Adjusted for balance */
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section 2 Styling */
+        .section {
+            padding: 80px 20px;
+            background-color: #F9F9F9; /* Light gray background for section */
+        }
+
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Text Block (Section 2) */
+        .text-block {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .text-block h2 {
+            font-size: 2.4rem;
+            color: #fc0c0d;
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+            line-height: 1.4;
+        }
+
+        .text-block p {
+            font-size: 1.2rem;
+            color: #555555; /* Medium gray text */
+            margin-bottom: 20px;
+            font-family: 'Georgia', serif;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        /* Image Block (Section 2) */
+        .image-block {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image-block img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container, .section-content {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .text-column, .video-column, .text-block, .image-block {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .text-column h1, .text-block h2 {
+                font-size: 2.4rem;
+            }
+
+            .text-column p, .text-block p {
+                font-size: 1.1rem;
+            }
+
+            .video-column iframe {
+                max-height: 300px;
+            }
+        }
+
+        /* Animations */
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Section 1: Hero Section -->
+<section class="container">
+    <!-- Text Column -->
+    <div class="text-column">
+        <h1>The I Am Free Ghana Retreat: A Journey of Cultural Connection and Celebration</h1>
+        <p>Experience the Spirit of Freedom and Heritage in Ghana, Africa.</p>
+        <a href="#register" class="cta-button">Join the Journey – Secure Your Spot Today!</a>
+    </div>
+
+    <!-- Video Column -->
+    <div class="video-column">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- Section 2 -->
+<section class="section">
+    <div class="section-content">
+        <!-- Text Block -->
+        <div class="text-block">
+            <h2>Experience the Spirit of Freedom and Heritage</h2>
+            <p>The I Am Free Ghana Retreat is an extraordinary nine-day journey designed to inspire a profound sense of freedom, belonging, and connection. Set in the heart of the motherland, this retreat offers a transformative experience where you'll explore the rich history, vibrant culture, and breathtaking landscapes of Ghana.</p>
+        </div>
+
+        <!-- Image Block -->
+        <div class="image-block">
+            <img src="https://www.globaltimes.cn/Portals/0/attachment/2022/2022-08-01/5e1f0df9-6a6b-4e7e-8268-2cf3ff4d676a.jpeg" alt="Ghana Cultural Heritage">
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Immersion & Historical Exploration</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background-color: #FFFFFF; /* White background */
+            color: #333333; /* Dark gray text */
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Headline */
+        .headline {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2.5rem;
+            color: #fc0c0d; /* Red text color */
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+
+        /* Section 2 */
+        .section-2 {
+            position: relative;
+            background: url('https://www.example.com/background-image.jpg') center/cover no-repeat; /* Replace with actual background image URL */
+            padding: 60px 20px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .section-2-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Overlay for contrast */
+        .section-2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Black overlay with transparency */
+            z-index: 1;
+        }
+
+        /* Title and Description */
+        .section-2-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            z-index: 3;
+            position: relative;
+        }
+
+        .section-2-description {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            z-index: 3;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            z-index: 3;
+            position: relative;
+        }
+
+        .image-grid img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adding depth to images */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5); /* More intense shadow on hover */
+        }
+
+        /* Location Info */
+        .location-info {
+            margin-top: 40px;
+            z-index: 3;
+            position: relative;
+        }
+
+        .location-info h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #fc0c0d;
+        }
+
+        .location-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* CTA Button Below Section */
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+            z-index: 3;
+            position: relative;
+        }
+
+        .cta-section a {
+            padding: 0.8rem 2.5rem;
+            background-color: #fc0c0d;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(252, 12, 13, 0.5);
+        }
+
+        .cta-section a:hover {
+            background-color: #FF3B3B;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .section-2-content {
+                padding: 20px;
+            }
+
+            .section-2-title {
+                font-size: 2.5rem;
+            }
+
+            .section-2-description {
+                font-size: 1rem;
+            }
+
+            .image-grid {
+                gap: 10px;
+            }
+
+            .image-grid img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Headline -->
+<div class="headline">
+    Cultural Immersion & Historical Exploration
+</div>
+
+<!-- Section 2: Cultural Immersion & Historical Exploration -->
+<section class="section-2">
+    <div class="section-2-content">
+        <h1 class="section-2-title">Explore the Richness of Ghana</h1>
+        <p class="section-2-description">Join us on a journey through Ghana's most captivating sites. From the historical depths of the Cape Coast to the vibrant streets of Accra, experience the heart of West African culture.</p>
+
+        <!-- Image Grid -->
+        <div class="image-grid">
+            <img src="https://www.gpsmycity.com/img/gd_cover/5160.jpg" alt="Accra">
+            <img src="https://visitghana.com/wp-content/uploads/2018/08/2347_ABS_cape-coast-castle-in-ghana.jpg" alt="Cape Coast & Elmina Slave Castles">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/e2/14/16/adukrom-deluxe-cabins.jpg?w=500&h=400&s=1" alt="Safari Valley Eco Park">
+            <img src="https://nationalparks-15bc7.kxcdn.com/images/parks/kakum/Kakum%20National%20Park%20bridge.jpg" alt="Kakum National Park">
+        </div>
+
+        <!-- Location Info -->
+        <div class="location-info">
+            <h3>Accra</h3>
+            <p>Discover the bustling streets of Accra, Ghana's vibrant capital. From historic sites to modern attractions, Accra offers a unique blend of cultural experiences and urban energy.</p>
+
+            <h3>The Cape Coast & Elmina Slave Castles</h3>
+            <p>Explore the poignant history of Ghana through the Cape Coast and Elmina Slave Castles. These historical landmarks provide insight into the country's past and the transatlantic slave trade.</p>
+
+            <h3>Safari Valley Eco Park</h3>
+            <p>Experience the lush landscapes of Safari Valley Eco Park, where nature and conservation come together. Enjoy guided tours, wildlife spotting, and eco-friendly activities in this serene environment.</p>
+
+            <h3>Kakum National Park</h3>
+            <p>Immerse yourself in the natural beauty of Kakum National Park. Walk the canopy walkway and explore the rich biodiversity of this tropical rainforest.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Button Below Section -->
+<div class="cta-section">
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrant Celebrations & Exclusive Access</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Section Styling */
+        .vibrant-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 20px;
+            background-color: #2B2B2B; /* Dark grey background */
+            border-radius: 10px;
+        }
+
+        /* Video Block */
+        .video-block {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .video-block video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #fc0c0d;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Content Block */
+        .content-block {
+            flex: 1;
+            padding: 40px;
+            color: #FFFFFF;
+        }
+
+        .content-block h2 {
+            font-size: 2.5rem;
+            color: #fc0c0d;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .content-block p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 2.2rem;
+            background-color: #fc0c0d;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 15px rgba(252, 12, 13, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #FF3B3B;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .vibrant-section {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .video-block,
+            .content-block {
+                margin: 0;
+                width: 100%;
+            }
+
+            .content-block {
+                margin-bottom: 20px;
+                padding: 20px;
+            }
+
+            .content-block h2 {
+                font-size: 2rem;
+            }
+
+            .content-block p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Vibrant Celebrations & Exclusive Access Section -->
+    <section class="vibrant-section">
+        <!-- Video Block -->
+        <div class="video-block">
+            <video controls>
+                <source src="https://www.afrofuturefest.com/sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Content Block -->
+        <div class="content-block">
+            <h2>Vibrant Celebrations & Exclusive Access</h2>
+            <p>Experience the ultimate celebration of African talent and culture at AfroFuture Fest, and ring in the New Year with an exclusive party that will be etched in your memory forever.</p>
+            <a href="#register" class="cta-button">Get VIP Access – Register Now!</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Am Free Retreat Ghana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        p {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .hero-section {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .cultural-section {
+            background: linear-gradient(to right, #243B55, #141E30);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cultural-section img {
+            max-width: 45%;
+            border-radius: 10px;
+        }
+
+        .cultural-section .text {
+            max-width: 50%;
+        }
+
+        .accommodation-section {
+            background-color: #eef5f9;
+            text-align: center;
+        }
+
+        .accommodation-section img {
+            max-width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .adventure-section {
+            background: #fc0c0d; /* Brand color */
+            color: #fff;
+        }
+
+        .adventure-section .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .adventure-section img {
+            max-width: 30%;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .adventure-section .bottom-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .royalty-section {
+            background: linear-gradient(to right, #e6dada, #274046);
+            color: #fff;
+            text-align: center;
+        }
+
+        .royalty-section img {
+            max-width: 80%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .life-changing-section {
+            background: url('https://example.com/life-changing-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        .life-changing-section video {
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d9534f;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .mailing-list-form input {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .mailing-list-form button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #d9534f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Section 4: Deep Cultural Connection & Personal Growth -->
+    <section class="cultural-section">
+        <img src="https://storage.googleapis.com/msgsndr/UMQj4LFLWpTb2KWqLYy6/media/657bc50a5a248f70c56b9e23.jpeg" alt="Fihankra Ceremony">
+        <div class="text">
+            <h2>Deep Cultural Connection & Personal Growth</h2>
+            <p>Reconnect with your roots and embrace a new cultural identity through our Fihankra Ceremony. Empower your future with our Vision Planning Workshop, aligning your goals with the spirit of freedom.</p>
+            <form>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <button class="cta-button">Get More Info</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section 5: Luxurious Accommodations & All-Inclusive Comfort -->
+    <section class="accommodation-section">
+        <h2>Luxurious Accommodations & All-Inclusive Comfort</h2>
+        <div class="image-gallery">
+            <img src="https://storage.googleapis.com/msgsndr/UMQj4LFLWpTb2KWqLYy6/media/657bc50a5a248f5a306b9e22.jpeg" alt="Luxurious Hotel">
+            <img src="https://storage.googleapis.com/msgsndr/UMQj4LFLWpTb2KWqLYy6/media/657b7b8bee2b772ff2c333a0.jpeg" alt="Gourmet Meal">
+            <img src="https://www.palacetravel.com/wp-content/uploads/2019/12/960x0.jpg" alt="Private Transportation">
+        </div>
+        <p>Rest and rejuvenate in 3.5 to 4-star accommodations, savor the flavors of Ghana with delicious daily meals, and enjoy stress-free travel with our private ground transportation.</p>
+        <a href="#accommodation" class="cta-button">Explore Accommodations</a>
+    </section>
+
+    <!-- Section 6: Adventure & Relaxation -->
+    <section class="adventure-section">
+        <div class="top-section">
+            <div>
+                <h2>Adventure & Relaxation</h2>
+                <p>Balance excitement with tranquility as you explore Ghana’s natural beauty. From the lush Aburi Botanical Gardens to the serene beaches, every moment is designed to relax and inspire.</p>
+            </div>
+            <img src="https://storage.googleapis.com/msgsndr/UMQj4LFLWpTb2KWqLYy6/media/657b7b8bee2b772ff2c333a0.jpeg" alt="Aburi Botanical Gardens">
+        </div>
+        <div class="bottom-section">
+            <img src="https://storage.googleapis.com/msgsndr/UMQj4LFLWpTb2KWqLYy6/media/657bc50a5a248f70c56b9e23.jpeg" alt="Beach Yoga">
+            <img src="https://storage.googleapis.com/msgsndr/UMQj4LFLWpTb2KWqLYy6/media/657bc50a5a248f5a306b9e22.jpeg" alt="Guided Tours">
+        </div>
+        <a href="#adventure" class="cta-button">Discover Adventures</a>
+    </section>
+
+    <!-- Section 7: Kings and Queens Are Welcome! -->
+    <section class="royalty-section">
+        <h2>Kings and Queens Are Welcome!</h2>
+        <img src="https://www.palacetravel.com/wp-content/uploads/2019/12/960x0.jpg" alt="Kings and Queens">
+        <p>Reconnect with your roots, embrace the spirit of Africa, and celebrate a shared heritage.</p>
+        <a href="#royalty" class="cta-button">Reserve Your Royal Spot Today!</a>
+    </section>
+
+    <!-- Section 8: Join Us for a Life-Changing Experience! -->
+    <section class="life-changing-section">
+        <h2>Join Us for a Life-Changing Experience!</h2>
+        <video controls>
+            <source src="https://example.com/retreat-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="#booking" class="cta-button">Secure Your Spot Now – Limited Availability!</a>
+    </section>
+
+    <!-- Footer: Stay Connected -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="mailing-list-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <button>Subscribe</button>
+        </div>
+        <div class="links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
